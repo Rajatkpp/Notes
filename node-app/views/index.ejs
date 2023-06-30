@@ -1,0 +1,16 @@
+<!-- views/index.ejs -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ticket System</title>
+</head>
+<body>
+  <h1>Ticket System</h1>
+  <a href="/tickets/create">Create Ticket</a>
+  <ul>
+    <% tickets.forEach(ticket => { %>
+      <li><%= ticket.title %></li>
+    <% }) %>
+  </ul>
+</body>
+</html>
